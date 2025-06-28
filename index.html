@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 
-<html><head><meta charset="utf-8"/><title>刑法朗讀系統</title></head><body><h1>刑法朗讀系統：總則（修正排序後）</h1><p>更新時間：2025-06-28 11:37</p><h2>第一章 法例</h2><div class="article-box">
+<html><head><meta charset="utf-8"/><title>刑法朗讀系統</title>
+<style>
+  .chapter-toggle { cursor: pointer; color: blue; text-decoration: underline; margin-top: 20px; }
+  .chapter-content { display: none; margin-left: 20px; }
+</style>
+<script>
+  function toggleChapter(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
+</script>
+</head><body><h1>刑法朗讀系統：總則（修正排序後）</h1><p>更新時間：2025-06-28 11:37</p><div class="chapter-toggle" onclick="toggleChapter('chapter1-content')">▶ 第一章 法例（點擊展開/收合）</div><div class="chapter-content" id="chapter1-content"><div class="article-box">
 <h3>第001條（罪刑法定原則）</h3>
 <p>行為之處罰，以行為時之法律有明文規定者為限。拘束人身自由之保安處分，亦同。</p>
 <audio controls="" loop="" src="001.m4a"></audio>
@@ -76,9 +91,8 @@
 四、其他與性相關而客觀上足以引起性慾或羞恥之行為。
 </p>
 <audio controls="" loop="" src="010.m4a"></audio>
-</div><div class="article-box" id="art011"><h3>第011條</h3><p>本法總則於其他法律有刑罰、保安處分或沒收之規定者，亦適用之。但其他法律有特別規定者，不在此限。</p><audio controls="True" src="011.m4a"></audio></div>
-<h2>第二章 刑事責任</h2>
-<div class="article-box" id="art012">
+</div><div class="article-box" id="art011"><h3>第011條</h3><p>本法總則於其他法律有刑罰、保安處分或沒收之規定者，亦適用之。但其他法律有特別規定者，不在此限。</p><audio controls="True" src="011.m4a"></audio></div></div>
+<div class="chapter-toggle" onclick="toggleChapter('chapter2-content')">▶ 第二章 刑事責任（點擊展開/收合）</div><div class="chapter-content" id="chapter2-content"><div class="article-box" id="art012">
 <h3>第012條（犯罪之責任要件－故意、過失）</h3>
 <p>
     1. 行為非出於故意或過失者，不罰。<br/><br/>
@@ -92,7 +106,6 @@
     2. 行為人對於構成犯罪之事實，預見其發生而其發生並不違背其本意者，以故意論。
   </p>
 <audio controls="" loop="" src="013.m4a"></audio>
-</div>
-
+</div></div>
 
 </body></html>
